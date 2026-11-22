@@ -1,0 +1,64 @@
+/*
+ * Jetons de design repris des maquettes : couleurs, typographie, rayons, espacements.
+ * Tous les contrastes texte/fond respectent le niveau AA du WCAG (4,5:1 minimum).
+ */
+:root {
+  /* Fonds et surfaces */
+  --bg: #f4f2ee;
+  --bg-outside: #e7e4de;
+  --surface: #ffffff;
+  --surface-muted: #e7e4de;
+
+  /* Texte */
+  --ink: #17191c;
+  --ink-2: #3a3e44;
+  --muted: #5b6068;
+
+  /* Bordures */
+  --border: #e3e0da;
+  --border-strong: #d6d2cb;
+  --divider: #eeebe6;
+
+  /* Accent orange (boutons, élément actif) */
+  --accent: #c2410c;
+  --accent-ink: #9a3412;
+  --accent-soft: #fbe7dc;
+  --accent-bright: #e8622c;
+
+  /* États */
+  --good-bg: #ddf3e4;
+  --good-ink: #14532d;
+  --good-bright: #3fb97a;
+  --warn-bg: #fbe7dc;
+  --warn-ink: #9a3412;
+  --danger: #b42318;
+  --danger-soft: #fee4e2;
+  --info-bg: #e8eef9;
+  --info-ink: #1e3a8a;
+  --focus: #1d4ed8;
+
+  /* Cartes sombres */
+  --dark: #17191c;
+  --dark-2: #24282d;
+  --dark-3: #2b2f35;
+  --dark-track: #33373d;
+  --dark-ink-2: #c9cdd2;
+  --dark-muted: #a9aeb5;
+
+  /* Typographie */
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+
+  /* Formes */
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+
+  /* Mise en page */
+  --app-max: 480px;
+  --gutter: 20px;
+  --tabbar-h: 76px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}

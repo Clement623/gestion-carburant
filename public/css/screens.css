@@ -1,0 +1,98 @@
+/* ---------- Accueil ---------- */
+.vehicle-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 52%;
+  min-height: 44px;
+  padding: 8px 12px 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.vehicle-chip .icon { flex-shrink: 0; }
+.screen-header .eyebrow { white-space: nowrap; }
+.vehicle-chip-text { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.hero { padding: 22px; }
+.hero-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
+.hero-label { font-size: 13px; font-weight: 500; color: var(--dark-ink-2); }
+.hero-value { display: flex; align-items: baseline; gap: 8px; }
+.hero-number {
+  font-family: var(--font-display);
+  font-size: 64px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.hero-unit { font-size: 17px; font-weight: 500; color: var(--dark-ink-2); }
+.hero-hint { font-size: 13px; color: var(--dark-ink-2); }
+.hero-link { align-self: flex-start; font-size: 13px; font-weight: 600; color: #ffffff; min-height: 44px; display: inline-flex; align-items: center; }
+.welcome-lead { font-family: var(--font-display); font-size: 22px; font-weight: 600; line-height: 1.25; }
+.trend-chip { padding: 4px 10px; border-radius: var(--radius-pill); font-size: 12px; font-weight: 600; white-space: nowrap; }
+.trend-good { background: #2a3b2f; color: #9fe0b0; }
+.trend-bad { background: #3f2a20; color: #f7b794; }
+
+.gauge { display: flex; flex-direction: column; gap: 6px; }
+.gauge-track { position: relative; height: 8px; border-radius: 4px; background: var(--dark-track); }
+.gauge-fill { position: absolute; inset: 0 auto 0 0; border-radius: 4px; }
+.gauge-fill-over { background: var(--accent-bright); }
+.gauge-fill-good { background: var(--good-bright); }
+.gauge-target { position: absolute; top: -4px; width: 2px; height: 16px; margin-left: -1px; border-radius: 1px; background: #ffffff; }
+.gauge-legend { display: flex; justify-content: space-between; font-size: 11px; color: var(--dark-muted); }
+
+.fillup-summary { display: flex; align-items: center; gap: 12px; text-decoration: none; border-radius: 12px; }
+.fillup-summary:hover .row-title { text-decoration: underline; }
+
+/* ---------- Formulaire de plein ---------- */
+.form-header { display: flex; align-items: center; gap: 4px; padding-top: 8px; }
+.preview { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 16px; border-radius: var(--radius-md); }
+.preview-label { font-size: 12px; color: var(--dark-ink-2); }
+.preview-main { font-size: 15px; font-weight: 600; }
+.preview-value { font-family: var(--font-display); font-size: 20px; font-weight: 600; white-space: nowrap; }
+.preview-hint { font-size: 13px; color: var(--dark-ink-2); }
+
+/* ---------- Historique ---------- */
+.month-group { display: flex; flex-direction: column; gap: 8px; }
+.month-head { display: flex; justify-content: space-between; align-items: baseline; padding: 0 4px; }
+.month-title { font-size: 13px; font-weight: 600; color: var(--ink-2); text-transform: uppercase; letter-spacing: 0.06em; }
+.month-total { font-size: 13px; font-weight: 600; color: var(--ink-2); }
+.fillup-row { display: flex; align-items: center; gap: 12px; padding: 12px 14px; text-decoration: none; }
+.fillup-row:hover { background: var(--bg); }
+.fillup-day { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; width: 40px; }
+.fillup-day-num { font-family: var(--font-display); font-size: 20px; font-weight: 600; line-height: 1; }
+.fillup-day-name { font-size: 11px; color: var(--muted); }
+.fillup-side { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+
+/* ---------- Véhicule ---------- */
+.vehicle-card { padding: 20px; }
+.vehicle-top { display: flex; align-items: center; gap: 14px; }
+.vehicle-name { font-size: 17px; font-weight: 600; overflow-wrap: anywhere; }
+.vehicle-sub { font-size: 13px; color: var(--dark-ink-2); }
+.nowrap { white-space: nowrap; }
+.vehicle-actions { display: flex; justify-content: flex-end; }
+.vehicle-specs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.spec dt { font-size: 11px; color: var(--dark-muted); }
+.spec dd { font-size: 15px; font-weight: 600; }
+.range-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: var(--dark-2);
+}
+.range-label { font-size: 13px; color: var(--dark-ink-2); }
+.range-value { font-family: var(--font-display); font-size: 20px; font-weight: 600; white-space: nowrap; }
+.reminder-row { display: flex; flex-direction: column; gap: 8px; padding: 14px; text-decoration: none; }
+.reminder-row:hover { background: var(--bg); }
+.reminder-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.reminder-due { font-size: 12px; font-weight: 600; color: var(--muted); white-space: nowrap; }
+.due-soon { color: #92400e; }
+.due-overdue { color: var(--accent-ink); }
+.privacy-note p.row-gap { color: var(--ink); }

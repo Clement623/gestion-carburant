@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!--
+    Politique de sécurité du contenu (CSP) : seules les ressources du site lui-même sont autorisées.
+    Aucun script en ligne, aucun style en ligne, aucune ressource externe, Trusted Types obligatoires.
+    Les hébergeurs qui lisent le fichier _headers (Netlify, Cloudflare Pages) envoient en plus
+    la même politique en en-tête HTTP, avec frame-ancestors (interdit l'affichage dans une iframe).
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; require-trusted-types-for 'script'; trusted-types sw-url; upgrade-insecure-requests">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#F4F2EE">
+  <meta name="description" content="Suivez la consommation de carburant de votre véhicule : pleins, dépenses, statistiques et entretien. Vos données restent sur votre appareil.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Carburant">
+  <title>Suivi Carburant</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png">
+  <link rel="preload" href="./assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./css/tokens.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/screens.css">
+  <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+  <!-- Le contenu vient avant la barre d'onglets dans le document : pas besoin de lien d'évitement. -->
+  <div class="app">
+    <main id="main" class="screen" tabindex="-1">
+      <p class="loading">Chargement…</p>
+    </main>
+    <nav id="tabbar" class="tabbar" aria-label="Navigation principale"></nav>
+  </div>
+  <div id="toasts" class="toast-region" aria-live="polite"></div>
+  <noscript>
+    <p class="noscript">Suivi Carburant a besoin de JavaScript pour fonctionner. Activez-le dans les réglages de votre navigateur.</p>
+  </noscript>
+</body>
+</html>

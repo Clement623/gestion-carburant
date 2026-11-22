@@ -1,0 +1,18 @@
+{
+  "name": "suivi-carburant",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Application web installable (PWA) de suivi de consommation de carburant. Les données restent sur l'appareil.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test",
+    "test:e2e": "node tests/e2e/parcours.e2e.mjs"
+  },
+  "devDependencies": {
+    "fake-indexeddb": "^6.2.8"
+  }
+}
